@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Courgette&family=Roboto+Condensed&display=swap");
+
+:root {
+  --color-code1: white;
+  --color-code2: orange;
+  --color-code3: #4d4c5c;
+  --navbar-height: 4em;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-color-code1 {
+  background-color: var(--color-code1);
+}
+
+.bg-color-code2,
+#navbar a:hover {
+  background-color: var(--color-code2);
+}
+
+.bg-color-code3 {
+  background-color: var(--color-code3);
+}
+
+.color-code1,
+#navbar a:hover {
+  color: var(--color-code1);
+}
+
+.color-code3 {
+  color: var(--color-code3);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.min-height-100v {
+  min-height: 100vh;
+}
+
+.nav-height {
+  height: var(--navbar-height);
+}
+
+.title-font {
+  font-family: "Carter One", cursive;
+}
+
+.subtitle-font {
+  font-family: "Courgette", cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.text-c {
+  text-align: center;
+}
+
+body {
+  font: 16px "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar {
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+#navbar a {
+  margin-right: 1em;
+  padding: 1em 0.5em;
+  font-size: 1.25em;
+}
+
+#welcome-section p {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+#projects {
+  padding: 2em 1em 1em;
+}
+
+#project-tiles {
+  flex-wrap: wrap;
+  gap: 1.35em;
+  margin-top: 1.5em;
+}
+
+#project-tiles img {
+  max-width: 400px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+figcaption {
+  padding: 0.625em;
+  font-size: 1.25em;
+}
+
+figcaption:hover::before {
+  content: "< ";
+  color: var(--color-code3);
+  font-weight: bold;
+}
+
+figcaption:hover::after {
+  content: " />";
+  color: var(--color-code3);
+  font-weight: bold;
+}
+
+#contact {
+  height: calc(100vh - var(--navbar-height));
+  row-gap: 5em;
+}
+
+#profiles {
+  justify-content: space-evenly;
+  padding: 0 2em;
+}
+
+#profiles a {
+  font-size: 1.5em;
+  gap: 0.3125em;
+}
+
+i {
+  font-size: 1.2em;
+}
+
+hr {
+  border: 2px solid var(--color-code2);
+}
+
+@media only screen and (max-width: 1200px) {
+  #project-tiles img {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #project-tiles img {
+    max-width: 320px;
+  }
+
+  #profiles a {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #project-tiles img {
+    max-width: 270px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  #welcome-section p {
+    font-size: 1.25em;
+  }
+
+  #navbar a,
+  figcaption,
+  #profiles a,
+  p,
+  i {
+    font-size: 1em;
+  }
+
+  .text p {
+    font-size: 0.875em;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #project-tiles img {
+    max-width: 230px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #project-tiles img {
+    max-width: 180px;
+  }
+
+  figcaption {
+    font-size: 0.8em;
+  }
+
+  #profiles a {
+    font-size: 0.625em;
+  }
+
+  footer {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #project-tiles {
+    flex-direction: column;
+  }
+
+  #project-tiles img {
+    max-width: 100%;
+  }
+}
