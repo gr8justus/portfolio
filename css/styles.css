@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font: 16px "Roboto Condensed", sans-serif;
 }
@@ -36,13 +41,13 @@ h2 {
   font-size: 2.25em;
 }
 
-h3 {
+h3,
+i {
   font-size: 1.5em;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+p {
+  font-size: 1.25em;
 }
 
 .align-c {
@@ -101,12 +106,12 @@ a {
   gap: 2em;
 }
 
-hr {
-  border: 2px solid var(--color-code2);
+.gy-3 {
+  gap: 3em;
 }
 
-i {
-  font-size: 1.25em;
+hr {
+  border: 2px solid var(--color-code2);
 }
 
 img {
@@ -127,6 +132,14 @@ img {
   margin-top: 4em;
 }
 
+.p-8p {
+  padding: 0.5em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
 .pb-1 {
   padding-bottom: 1em;
 }
@@ -139,12 +152,20 @@ img {
   padding-bottom: 4em;
 }
 
+.pe-2 {
+  padding-right: 2em;
+}
+
 .ps-1 {
   padding-left: 1em;
 }
 
 .ps-2 {
   padding-left: 2em;
+}
+
+.ps-3 {
+  padding-left: 3em;
 }
 
 .pt-1 {
@@ -199,6 +220,7 @@ img {
 /* ==== Bio page styles starts ==== */
 .round {
   border-radius: 50%;
+  height: 300px;
 }
 
 .container {
@@ -207,22 +229,13 @@ img {
 /* ==== Bio page styles ends ==== */
 
 /* ==== Portfolio & contact styles starts ==== */
-p {
-  font-size: 1.25em;
-}
-
 .category {
   color: #4d4c5c;
-}
-
-.profile {
-  font-size: 1.25em;
 }
 
 .profile-link:hover {
   color: var(--color-code2);
   background-color: var(--color-code1);
-  padding: 0.5em;
 }
 
 .project-title {
@@ -244,21 +257,240 @@ object {
 }
 
 /* ==== Portfolio & contact styles ends ==== */
-
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (width: 1440px) {
+  #projects-container {
+    padding: 2.5em;
+    justify-content: unset;
+  }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1024px) {
+  #projects-container {
+    gap: 1.5em;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  footer,
+  .category {
+    font-size: 0.75em;
+  }
+
+  .min-height-100v {
+    min-height: calc(100vh - (var(--bar-height) * 2 - 12px));
+  }
+
+  .ps-3 {
+    padding-left: 1em;
+  }
+
+  .round {
+    width: 250px;
+    height: 250px;
+  }
+
+  p,
+  .project-title,
+  #navbar a {
+    font-size: 1em;
+  }
+
+  #navbar a {
+    margin-right: 0.75em;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .tile {
+    aspect-ratio: 1.5 / 1.2;
+  }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3,
+  #repo i {
+    font-size: 1em;
+  }
+
+  #navbar {
+    justify-content: space-around;
+  }
+
+  #navbar a {
+    margin-right: 0;
+  }
+
+  #name-tag {
+    max-width: 100%;
+  }
+
+  p,
+  .project-title,
+  #navbar a {
+    font-size: 0.75em;
+  }
+
+  .round {
+    width: 200px;
+    height: 200px;
+  }
+
+  #elevator-pitch > h2 {
+    font-size: 1.5em;
+  }
+
+  video {
+    width: 450px;
+  }
+
+  #projects-container {
+    gap: 1em;
+  }
+
+  .img,
+  object {
+    max-width: 230px;
+  }
+
+  .tile {
+    gap: 0.5em;
+  }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 425px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .img,
+  object {
+    max-width: 170px;
+    aspect-ratio: 1.2 / 1;
+  }
+
+  .tile {
+    aspect-ratio: 1.5 / 1.3;
+    gap: 0.5em;
+  }
+
+  video {
+    width: 350px;
+  }
+
+  #elevator-pitch > h2 {
+    font-size: 1em;
+  }
+
+  #contact > div {
+    gap: 1em;
+  }
 }
 
-@media only screen and (max-width: 350px) {
-} */
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .tile {
+    aspect-ratio: 1.5 / 1.4;
+    gap: 0.3em;
+  }
+
+  .img,
+  object {
+    max-width: 150px;
+  }
+
+  #repo {
+    gap: 1.5em;
+  }
+
+  #repo div {
+    gap: 0.5em;
+  }
+
+  #contact > h1 {
+    font-size: 1.75em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3,
+  #repo i {
+    font-size: 0.9375em;
+  }
+
+  #name-tag {
+    align-items: center;
+    padding-left: unset;
+  }
+
+  #elevator-pitch > h2 {
+    font-size: 0.75em;
+  }
+
+  video {
+    width: 290px;
+  }
+
+  #projects-container {
+    gap: 0.75em;
+  }
+
+  .tile {
+    aspect-ratio: 1.5 / 1.4;
+    gap: 0.2em;
+  }
+
+  .img,
+  object {
+    max-width: 130px;
+  }
+
+  .tile div {
+    padding-left: unset;
+  }
+
+  #repo > h3 {
+    padding-left: 1em;
+  }
+
+  #contact > div {
+    gap: 0.75em;
+  }
+}
