@@ -267,8 +267,9 @@ object {
   border-radius: 3px;
   aspect-ratio: 1 / 0.6;
 }
-
 /* ==== Portfolio & contact styles ends ==== */
+
+/* ==== media queries begins ==== */
 @media only screen and (width: 1440px) {
   #projects-container {
     padding: 16px 210px 48px;
@@ -277,13 +278,13 @@ object {
 }
 
 @media only screen and (max-width: 1024px) {
-  #projects-container {
-    gap: 1.5em;
-  }
-
   h1.ps-9,
   h3.ps-9 {
     padding-left: 32px;
+  }
+
+  #projects-container {
+    gap: 1.5em;
   }
 }
 
@@ -307,10 +308,6 @@ object {
 
   .min-height-100v {
     min-height: calc(100vh - (var(--bar-height) * 2 - 12px));
-  }
-
-  .ps-3 {
-    padding-left: 1em;
   }
 
   .round {
@@ -350,10 +347,6 @@ object {
     font-size: 1em;
   }
 
-  #repo i {
-    font-size: 1.5em;
-  }
-
   #navbar {
     justify-content: space-around;
   }
@@ -364,10 +357,6 @@ object {
 
   #name-tag {
     max-width: 100%;
-  }
-
-  .project-title {
-    font-size: 0.75em;
   }
 
   .round {
@@ -387,23 +376,32 @@ object {
     gap: 1em;
   }
 
-  .img,
-  object {
-    max-width: 230px;
+  .project-title {
+    font-size: 0.75em;
   }
 
   .tile {
     gap: 0.5em;
   }
+
+  .img,
+  object {
+    max-width: 230px;
+  }
+
+  #repo i {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 428px) {
-  i {
-    font-size: 1.5em;
-  }
-
   h1 {
     font-size: 2.25em;
+  }
+
+  h1.ps-9,
+  h3.ps-9 {
+    padding-left: 20px;
   }
 
   #name-tag p {
@@ -415,10 +413,22 @@ object {
     align-items: center;
   }
 
+  i {
+    font-size: 1.5em;
+  }
+
   .img,
   object {
     max-width: 155px;
     aspect-ratio: 1.2 / 1;
+  }
+
+  #elevator-pitch > h2 {
+    font-size: 1em;
+  }
+
+  video {
+    width: 350px;
   }
 
   .tile {
@@ -426,12 +436,8 @@ object {
     gap: 0.5em;
   }
 
-  video {
-    width: 350px;
-  }
-
-  #elevator-pitch > h2 {
-    font-size: 1em;
+  #repo div {
+    gap: 0.5em;
   }
 
   .connect > div {
@@ -465,14 +471,6 @@ object {
   #repo {
     gap: 1em;
   }
-
-  #repo div {
-    gap: 0.5em;
-  }
-
-  #contact > h1 {
-    font-size: 1.75em;
-  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -484,17 +482,13 @@ object {
     font-size: 1.2em;
   }
 
-  h1.ps-9,
-  h3.ps-9 {
-    padding-left: 16px;
-  }
-
   h3 {
     font-size: 0.9375em;
   }
 
-  #repo i {
-    font-size: 1.25em;
+  h1.ps-9,
+  h3.ps-9 {
+    padding-left: 16px;
   }
 
   #name-tag {
@@ -524,11 +518,8 @@ object {
     max-width: 130px;
   }
 
-  #repo > h3 {
-    padding-left: 1em;
-  }
-
-  #contact > div {
-    gap: 0.75em;
+  #repo i {
+    font-size: 1.25em;
   }
 }
+/* ==== media queries ends ==== */
