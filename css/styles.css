@@ -233,6 +233,11 @@ img {
 .container {
   width: 80%;
 }
+
+video {
+  width: 720px;
+}
+
 /* ==== Bio page styles ends ==== */
 
 /* ==== Portfolio & contact styles starts ==== */
