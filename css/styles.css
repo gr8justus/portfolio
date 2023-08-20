@@ -404,6 +404,10 @@ object {
     padding-left: 20px;
   }
 
+  .ps-3 {
+    padding-left: 1em;
+  }
+
   #name-tag p {
     font-size: 0.75em;
   }
@@ -436,8 +440,12 @@ object {
     gap: 0.5em;
   }
 
+  #repo {
+    gap: 1em;
+  }
+
   #repo div {
-    gap: 0.5em;
+    gap: 0.3em;
   }
 
   .connect > div {
@@ -466,10 +474,6 @@ object {
   .img,
   object {
     max-width: 140px;
-  }
-
-  #repo {
-    gap: 1em;
   }
 }
 
